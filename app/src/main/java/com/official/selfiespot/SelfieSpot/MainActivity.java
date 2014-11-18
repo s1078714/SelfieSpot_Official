@@ -85,6 +85,7 @@ public class MainActivity extends Activity {
 		// enabling action bar app icon and behaving it as toggle button
 		getActionBar().setDisplayHomeAsUpEnabled(true);
 		getActionBar().setHomeButtonEnabled(true);
+        getActionBar().setIcon(android.R.color.transparent);
 
 		mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, //nav menu toggle icon
 				com.official.selfiespot.SelfieSpot.R.string.app_name, // nav drawer open - description for accessibility
