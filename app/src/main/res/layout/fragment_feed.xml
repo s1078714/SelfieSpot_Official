@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/bg_card">
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="130dp"
+            android:layout_weight="0"
+            android:src="@drawable/ic_action_camera"
+            android:layout_marginRight="6dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+                <TextView
+                    android:id="@+id/locationFeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_marginRight="6dp"
+                    android:text="Gunnar Kelders" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/switch_thumb_normal_material_dark"
+                    android:textSize="16dp"
+                    android:text="dd/mm/yy" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/mainblue"
+                    android:textSize="40dp"
+                    android:text="7.9" />
+            </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

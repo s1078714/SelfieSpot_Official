@@ -70,7 +70,7 @@ public class MainActivity extends Activity {
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[4], navMenuIcons.getResourceId(4, -1)));
 		// What's hot, We  will add a counter here
 		navDrawerItems.add(new NavDrawerItem(navMenuTitles[5], navMenuIcons.getResourceId(5, -1), true, "50+"));
-		
+
 
 		// Recycle the typed array
 		navMenuIcons.recycle();
@@ -87,7 +87,8 @@ public class MainActivity extends Activity {
 		getActionBar().setHomeButtonEnabled(true);
         getActionBar().setIcon(android.R.color.transparent);
 
-		mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, //nav menu toggle icon
+		mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout,
+		        /*R.drawable.ic_drawer,//nav menu toggle icon, nodig voor v4*/
 				com.official.selfiespot.SelfieSpot.R.string.app_name, // nav drawer open - description for accessibility
 				com.official.selfiespot.SelfieSpot.R.string.app_name // nav drawer close - description for accessibility
 		) {
@@ -164,13 +165,13 @@ public class MainActivity extends Activity {
 		Fragment fragment = null;
 		switch (position) {
 		case 0:
-			fragment = new HomeFragment();
+			fragment = new CameraFragment();
 			break;
 		case 1:
-			fragment = new FindPeopleFragment();
+			fragment = new ProfielFragment();
 			break;
 		case 2:
-			fragment = new PhotosFragment();
+			fragment = new FeedFragment();
 			break;
 		case 3:
 			fragment = new CommunityFragment();
